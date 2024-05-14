@@ -1,24 +1,28 @@
 # Changelog
 
+## 4.0.2
+
+-   Dependencies bump
+
 ## 4.0.1
 
-- Added the *initialPosition* field to the `LocationWatcherLayer` so that the widget can be correctly initialized
+-   Added the _initialPosition_ field to the `LocationWatcherLayer` so that the widget can be correctly initialized
 
 ## 4.0.0
 
 ### ❗Breaking changes
 
-- Updated to **flutter_map 6** 
+-   Updated to **flutter_map 6**
 
 ## 3.0.1
 
-- Added the abort operation when the storage is full of memory
+-   Added the abort operation when the storage is full of memory
 
 ## 3.0.0
 
 ### ❗Breaking changes
 
--   Updated to **flutter_map 5** 
+-   Updated to **flutter_map 5**
 -   Added accuracy circle layer styling to the `LocationWatcherLayer`
 
 ## 2.0.1
