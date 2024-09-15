@@ -12,18 +12,20 @@ Also, it includes a useful layer for **flutter_map** that allows to easily displ
 ### Definitions
 
 **`Region`**
+
 > A region is an area identified by its `LatLngBounds`
 
 **`Depot`**
+
 > Identifies a storage that can contain an arbitrary number of **Regions**. Tiles inside a depot are dynamically shared among regions in order to prevent redownload and save space. Any number of depots can be created during the setup
 
 ### Main features
 
-* Store and delete regions by `id`: each `Depot` can contain many regions
-* Save space: **Mapplet** detects already stored tiles shared among regions inside each `Depot` and prevent redownload automatically
-* Parallel fetch: region tiles are fetched with multiple workers and written in batches on the internal database. This allows for _transaction-like_ operations with clean `abort` and `commit`.
-* Extremely fast learning curve: **Mapplet** exposes only the strictly necessary to the developer. With a single point of configuration, integrating the package in projects is very easy.
-* A simple and ready to use layer for **flutter_map** that allows to easily display the user's current location automatically.
+-   Store and delete regions by `id`: each `Depot` can contain many regions
+-   Save space: **Mapplet** detects already stored tiles shared among regions inside each `Depot` and prevent redownload automatically
+-   Parallel fetch: region tiles are fetched with multiple workers and written in batches on the internal database. This allows for _transaction-like_ operations with clean `abort` and `commit`.
+-   Extremely fast learning curve: **Mapplet** exposes only the strictly necessary to the developer. With a single point of configuration, integrating the package in projects is very easy.
+-   A simple and ready to use layer for **flutter_map** that allows to easily display the user's current location automatically.
 
 ## Getting started
 
@@ -48,11 +50,11 @@ Each configuration specified here will result in a single `Depot` being created 
 
 The structure of the configuration is the following:
 
-![config](https://codemeup.dev/api/tratteo/wildspace-dev@mapplet/render_lines?path=lib/src/depot/depot_config.dart&fragment=1-18&padding=24&border-radius=24&font-family=Inconsolata&font-weight=400&font-size=medium&font-line-height=18&theme=github-dark-default&format=raw)
+![config](https://codemeup.dev/api/tratteo/wildspace-dev@mapplet/render_lines?path=lib/src/depot/depot_config.dart&fragment=1-18&padding=24&border-radius=8&font-family=Inconsolata&theme=github-dark-default&bg=%23151b23&format=raw)
 
 ❗Version **^1.1.0**
 
-* `DepotConfiguration` requires the directory field. It is recommended to use the package [path_provider](https://pub.dev/packages/path_provider) to request a directory location that adapts to different platforms using `getApplicationDocumentsDirectory()`.
+-   `DepotConfiguration` requires the directory field. It is recommended to use the package [path_provider](https://pub.dev/packages/path_provider) to request a directory location that adapts to different platforms using `getApplicationDocumentsDirectory()`.
 
 ## Usage
 
@@ -105,9 +107,9 @@ await depot.dropRegion("region_id");
 Again, two lines of code.
 **Mapplet** has a single tile providers associated with each `Depot`.
 
-* Tries to get the tiles from the storage
-* Otherwise, fetches it from the web
-* Automatically updates stored tiles based on the evict period defined in the `DepotConfiguration`
+-   Tries to get the tiles from the storage
+-   Otherwise, fetches it from the web
+-   Automatically updates stored tiles based on the evict period defined in the `DepotConfiguration`
 
 ```dart
 var depot = await Mapplet.depot("my_depot");
@@ -120,10 +122,10 @@ There are some useful methods in the `extensions` module of **Mapplet**. They ar
 
 Extensions subjects:
 
-* `LatLngBounds`
-* `int`
-* `LatLng`
-* `List<LatLng>`
+-   `LatLngBounds`
+-   `int`
+-   `LatLng`
+-   `List<LatLng>`
 
 ## Current location layer
 
