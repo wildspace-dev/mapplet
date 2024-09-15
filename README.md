@@ -46,6 +46,10 @@ await Mapplet.initiate([
 
 Each configuration specified here will result in a single `Depot` being created under the hood.
 
+The structure of the configuration is the following:
+
+![config](https://codemeup.dev/api/tratteo/wildspace-dev@mapplet/render_lines?path=lib/src/depot/depot_config.dart&fragment=1-18&padding=24&border-radius=24&font-family=Inconsolata&font-weight=400&font-size=medium&font-line-height=18&theme=github-dark-default&format=raw)
+
 ❗Version **^1.1.0**
 
 * `DepotConfiguration` requires the directory field. It is recommended to use the package [path_provider](https://pub.dev/packages/path_provider) to request a directory location that adapts to different platforms using `getApplicationDocumentsDirectory()`.
