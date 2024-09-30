@@ -50,7 +50,7 @@ Each configuration specified here will result in a single `Depot` being created 
 
 The structure of the configuration is the following:
 
-![config](https://codemeup.dev/api/tratteo/wildspace-dev@mapplet/render_lines?path=lib/src/depot/depot_config.dart&fragment=1-18&padding=24&border-radius=4&font-family=Inconsolata&theme=github-dark-default&bg=%23151b23&format=raw)
+![config](https://codemeup.dev/api/tratteo/wildspace-dev@mapplet/render_lines?path=lib/src/depot/depot_config.dart&height=400&fragment=1-18&padding=24&border-radius=4&font-family=Inconsolata&theme=github-dark-default&bg=%23151b23&format=raw)
 
 ❗Version **^1.1.0**
 
